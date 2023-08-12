@@ -18,14 +18,9 @@ msg_info "Installing mpd"
 $STD apt-get install -y mpd mpc nfs-common
 msg_ok "Installed mpd"
 
-#msg_info "Disabling user service"
-#systemctl --user disable mpd
-#msg_info "Disabled user service"
-
 msg_info "disabling system service for installation"
 systemctl disable mpd
 msg_info "disabled system service for installation"
-
 
 msg_info "Creating config file"
 cat <<EOF >/etc/mpd.conf
