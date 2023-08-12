@@ -26,7 +26,7 @@ EOF
 }
 header_info
 echo -e "Loading..."
-APP="mpd"
+APP="Mpd"
 var_disk="16"
 var_cpu="1"
 var_ram="512"
