@@ -37,7 +37,7 @@ color
 catch_errors
 
 function default_settings() {
-  CT_TYPE="1"
+  CT_TYPE="0"
   PW=""
   CT_ID=$NEXTID
   HN=$NSAPP
@@ -66,7 +66,7 @@ systemctl stop mpd.service
 msg_ok "Stopped mpd"
 
 msg_info "Updating mpd"
-apt upgrade mpd mpc
+apt upgrade mpd mpc nfs-common
 msg_ok "Updated mpd"
 
 msg_info "Starting mpd"
